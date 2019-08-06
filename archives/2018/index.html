@@ -140,9 +140,22 @@
           </span>
         
         
+          <div class="search mdui-hidden-xs" onclick="openSearch()" id="search">
+            <div class="icon">
+              <i class="mdui-icon material-icons">&#xe8b6;</i>
+            </div>
+            <div class="text">
+              <span id="search-text">搜索什么...</span>
+              <input id="search-input" class="mdui-hidden" type="text" placeholder="搜索什么..." id="search-input"/>
+            </div>
+          </div>
         
-          <div class="flex-spacer"></div>
         
+          <div class="flex-spacer mdui-hidden-sm"></div>
+        
+        
+          <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-hidden-sm-up search-button" onclick="mobileSearch()"><i class="mdui-icon material-icons">&#xe8b6;</i></button>
+          <button class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden" onclick="closeSearch()" id="close-button"><i class="mdui-icon material-icons">&#xe5cd;</i></button>
         
         
 
@@ -275,10 +288,10 @@
 
   <style id="side_content_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("side_content_css","/css/src/now/side_content.min.css?6QUsjVbcFbaNw1GxvnmHrA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
-<div id="side-content" class="mdui-color-red animate-drawer">
+<div id="side-content" class="mdui-color-indigo animate-drawer">
   <div class="mdui-grid-tile" style="overflow: visible;">
     <div class="bg">
-      <img src="/img/random/picHD_37.png" />
+      <img src="/img/random/picHD_35.png" />
     </div>
     <div class="mdui-grid-tile-actions mdui-grid-tile-actions-top mdui-grid-tile-actions-gradient">
       <div class="flex-spacer"></div>
@@ -323,6 +336,12 @@
     
 
     
+      <li class="mdui-menu-item">
+          <a href="https://telegram.me/url?url=https://blog.alcatrazdev.fun//archives/2018/index.html&text=2018" target="_blank" class="mdui-ripple">
+              分享到Telegram
+          </a>
+      </li>
+    
 
     
       <li class="mdui-menu-item">
@@ -332,6 +351,12 @@
       </li>
     
 
+    
+      <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share.php?appkey=&title=2018&url=https://blog.alcatrazdev.fun//archives/2018/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
+              分享到微博
+          </a>
+      </li>
     
 
   </ul>
@@ -393,7 +418,7 @@
     </div>
     <div class="flex-spacer"></div>
     
-      <div class="posts-thumbnail" style="background-image: url(/img/random/picHD_41.png)"></div>
+      <div class="posts-thumbnail" style="background-image: url(/img/random/picHD_22.png)"></div>
     
   </div>
   
