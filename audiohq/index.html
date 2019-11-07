@@ -389,23 +389,29 @@
         
         
           <div class="mdui-card-media">
-            <img src="/img/random/picHD_19.png"/>
+            <img src="/img/random/picHD_3.png"/>
           </div>
         
         <div class="post-content mdui-typo no-margin" id="post-content">
-          <p>##简介</p>
+          <p><strong>简介</strong></p>
 <blockquote>
 <p>这是一个音量控制器，允许在多个音轨在同时播放的情况下调节每个音轨(进程)独立的(左右)音量，并支持在底层执行未知应用和已知应用的静音操作</p>
 </blockquote>
-<p>##测试安装<br>请非原生或类原生的系统用户谨慎安装,如MIUI,EMUI等，请谨慎安装<br>安装位数检查，打开AudioHQ切换到“检查”选项卡，或执行：</p>
+<p><strong>测试安装</strong><br>请非原生或类原生的系统用户谨慎安装,如MIUI,EMUI等，请谨慎安装<br>安装位数检查，打开AudioHQ切换到“检查”选项卡，或执行：</p>
 <blockquote>
-<p>file /system/bin/audioserver<br>64位系统这个文件也可能是32位的</p>
+<p>file /system/bin/audioserver</p>
 </blockquote>
-<p>##Android 9 Api 28 AOSP (audioserver -&gt; 32 bit LSB arm)<br> 2019.11.1     |    <a href="https://alcatraz323.github.io/audiohq_magisk_2019_11_1-signed.zip" target="_blank" rel="noopener">[下载]</a><br> 2019.11.3     |    <a href="https://alcatraz323.github.io/audiohq_magisk_2019_11_3-signed.zip" target="_blank" rel="noopener">[下载]</a><br> 2019.11.7     |    <a href="https://alcatraz323.github.io/audiohq_magisk_2019_11_7-signed.zip" target="_blank" rel="noopener">[下载]</a></p>
-<p>##Android 9 Api 28 AOSP (audioserver -&gt; 64 bit LSB arm)</p>
+<p>注:64位系统这个文件也可能是32位的</p>
+<p><strong>Android 9 Api 28 AOSP (audioserver -&gt; 32 bit LSB arm)</strong><br> 2019.11.1     |    <a href="https://alcatraz323.github.io/audiohq_magisk_2019_11_1-signed.zip" target="_blank" rel="noopener">[下载]</a><br> 2019.11.3     |    <a href="https://alcatraz323.github.io/audiohq_magisk_2019_11_3-signed.zip" target="_blank" rel="noopener">[下载]</a><br> 2019.11.7     |    <a href="https://alcatraz323.github.io/audiohq_magisk_2019_11_7-signed.zip" target="_blank" rel="noopener">[下载]</a></p>
+<p><strong>Android 9 Api 28 AOSP (audioserver -&gt; 64 bit LSB arm)</strong></p>
 <blockquote>
 <p>暂不支持</p>
 </blockquote>
+<p><strong>命令行工具</strong></p>
+<blockquote>
+<p>audiohq -P 列出全部播放音轨<br>audiohq -z 列出已设置的进程<br>audiohq -z”processName|left,right,general,use_lr” 设置进程的音量<br>audiohq -M 列出被静音的进程<br>audiohq -M”processName|true/false” 设置进程静音<br>audiohq -x [pkg] 取消进程音量设置<br>audiohq -b 清除设置</p>
+</blockquote>
+<p><strong><em>其它选项请不要随意执行</em></strong></p>
 
         </div>
 
@@ -640,7 +646,7 @@
   <!-- content warning -->
 <script type="text/ls-javascript" id="content-warning-script">
   (function() {
-    var postLastModifiedDate = 1573106872956
+    var postLastModifiedDate = 1573112811522
     var today = (new Date()).getTime()
     var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
     if (difference >= 100) {
