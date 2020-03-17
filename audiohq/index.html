@@ -238,7 +238,7 @@
     
       <br />
       <span>
-        最后更新于：3月 06, 2020
+        最后更新于：3月 17, 2020
       </span>
     
     
@@ -299,7 +299,7 @@
           
           <br>
             <span>最后修改时间：</span>
-            <span>3月 06, 2020</span>
+            <span>3月 17, 2020</span>
           
         </div>
         
@@ -389,7 +389,7 @@
         
         
           <div class="mdui-card-media">
-            <img src="/img/random/picHD_31.png"/>
+            <img src="/img/random/picHD_10.png"/>
           </div>
         
         <div class="post-content mdui-typo no-margin" id="post-content">
@@ -404,12 +404,7 @@
 <p><strong>测试安装</strong><br>下方提供Magisk模块下载</p>
 <p>请原生或类原生的系统用户谨慎使用,（MIUI,EMUI等魔改ROM，请谨慎安装）</p>
 <p>关于其他Android Api若支持新的Android版本将在酷安评论区发布消息，请在酷安关注<br><em>已支持8.0(26) 8.1(27)</em></p>
-<p>2020.2.26目前结果 (MIUI可行性目前看来可能能用，但仍存在问题)，EMUI完全没有可行性<br>安装位数检查，打开AudioHQ切换到“检查”选项卡，或执行：</p>
-<blockquote>
-<p>file /system/bin/audioserver</p>
-</blockquote>
-<p><strong>注:64位系统这个文件也可能是32位的</strong></p>
-<p><strong><em>强调：下方位数指audioserver文件位数</em></strong><br><strong><em>强调：下方位数指audioserver文件位数</em></strong><br><strong><em>强调：下方位数指audioserver文件位数</em></strong></p>
+<p>2020.2.26目前结果 (MIUI可行性目前看来可能能用，但可能存在问题)，EMUI完全没有可行性</p>
 <p><strong>FAQ:</strong></p>
 <p><em>1.模块安装失败？</em></p>
 <blockquote>
@@ -417,7 +412,7 @@
 </blockquote>
 <p><em>2.悬浮窗问题</em></p>
 <blockquote>
-<p>检查是否已授予忽略电池优化，悬浮窗权限，以及是否在设置中手动开启，悬浮窗触发条件是音量改变，有些系统一次音量键出现音量条但不触发音量改变故不触发悬浮窗</p>
+<p>检查是否已授予忽略电池优化，悬浮窗权限，以及是否在设置中手动开启，悬浮窗触发条件是音量改变，有些系统一次音量键出现音量条但不触发音量改变故不触发悬浮窗，<strong>实验性</strong>直接触发方式已添加到设置</p>
 </blockquote>
 <p><em>3.怎么还原/恢复</em></p>
 <blockquote>
@@ -427,7 +422,26 @@
 <blockquote>
 <p>检查apk和模块版本是否对应</p>
 </blockquote>
-<p><strong><em>版本对照表</em></strong><br><strong><em>版本对照表</em></strong><br><strong><em>版本对照表</em></strong><br><strong>====================================================</strong><br><strong><em>请安装对应Apk模块，不然闪退</em></strong><br>模块————apk<br>2020.2.26——-0.6_beta1<br><strong><em>2020.3.3——-0.7_beta1 0.7_beta2    –当前最新发布版本</em></strong><br><strong>====================================================</strong></p>
+<p><em>5.为什么播放结束正在播放/悬浮窗中仍有该项</em></p>
+<blockquote>
+<p>系统底层没有调用destroy,不影响使用,对该项操作代表预设</p>
+</blockquote>
+<p><em>6.模块安装成功，SeLinux也是permissve状态但还是没有声音</em></p>
+<blockquote>
+<p>系统过度魔改，你的系统不支持</p>
+</blockquote>
+<p><strong><em>版本对照表</em></strong><br><strong><em>版本对照表</em></strong><br><strong><em>版本对照表</em></strong><br><strong>====================================================</strong><br><strong><em>请安装对应Apk模块，不然可能闪退且功能不正常</em></strong><br>模块————apk<br>2020.2.26——-0.6_beta1<br>2020.3.3——-0.7_beta1 0.7_beta2<br><strong><em>2020.3.17——0.8_beta1     –当前最新发布版本</em></strong><br><strong>====================================================</strong></p>
+<p><strong><em>最新通用模块 Api26(Android 8.0)-Api29(Android 10) arm/arm64</em></strong></p>
+<blockquote>
+<p>2020.3.17(最新)     |    <a href="https://alcatraz323.github.io/audiohq/download/audiohq_combined_091_2020_3_17.zip" target="_blank" rel="noopener">[下载]</a></p>
+</blockquote>
+<p><strong><em>旧版分api下方下载</em></strong></p>
+<p><font color="#FF0000">下方均为历史版本，不与当前最新apk(0.8)兼容</font><br>安装位数检查，打开AudioHQ切换到“检查”选项卡，或执行：</p>
+<blockquote>
+<p>file /system/bin/audioserver</p>
+</blockquote>
+<p><strong>注:64位系统这个文件也可能是32位的</strong></p>
+<p><strong><em>强调：下方位数指audioserver文件位数</em></strong><br><strong><em>强调：下方位数指audioserver文件位数</em></strong><br><strong><em>强调：下方位数指audioserver文件位数</em></strong></p>
 <p><strong>Android 8.0 Api 26 AOSP arm/arm64 (audioserver -&gt; 32 bit LSB arm)</strong></p>
 <blockquote>
 <p>2020.3.3     |    <a href="https://alcatraz323.github.io/audiohq/download/audiohq_api26_android_8_0_arm_1_2020_3_3.zip" target="_blank" rel="noopener">[下载]</a></p>
@@ -687,7 +701,7 @@
   <!-- content warning -->
 <script type="text/ls-javascript" id="content-warning-script">
   (function() {
-    var postLastModifiedDate = 1583472503725
+    var postLastModifiedDate = 1584425764260
     var today = (new Date()).getTime()
     var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
     if (difference >= 100) {
