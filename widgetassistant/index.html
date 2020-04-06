@@ -18,7 +18,7 @@
         https://github.com/Halyul/hexo-theme-mdui
         Version: 1.5.2 -->
   <meta charset="UTF-8">
-  <title>2019 - AirFortress</title>
+  <title>widgetassistant - AirFortress</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -55,7 +55,7 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="https://alcatraz323.github.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="2019 - AirFortress | AirFortress">
+  <meta property="og:title" content="widgetassistant - AirFortress | AirFortress">
   <meta property="og:image" content="/img/favicon.png" />
   
 
@@ -104,9 +104,7 @@
   
     mdui-appbar-with-toolbar
   
-  
-    side-content style-fix
-  " onresize="styleChanging()">
+  " >
 
 
   
@@ -117,38 +115,30 @@
 
   
 
-    <div class="mdui-appbar animate-appbar mdui-shadow-0 mdui-appbar-fixed" id="blog-appbar">
-      <div class="mdui-toolbar mdui-color-theme mdui-shadow-2">
-        <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
-          <i class="mdui-icon">
-            <span></span>
-          </i>
-        </button>
-        
-          <a href="/" class="mdui-typo-headline">
-            AirFotress
-          </a>
-          <span class="appbar-border-line mdui-hidden-xs"></span>
-        
-        
-          <span class="mdui-typo-title mdui-hidden-xs"
-            
-              onclick="smoothScroll.animateScroll( 0 );"
-            
-          >
-            2019
-          </span>
-        
-        
-        
-          <div class="flex-spacer"></div>
-        
-        
-        
+  <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed animate-appbar" id="blog-appbar">
+    <div class="mdui-toolbar mdui-color-theme">
+      <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
+        <i class="mdui-icon">
+          <span></span>
+        </i>
+      </button>
+      
+        <a href="/" class="mdui-typo-headline">
+          AirFotress
+        </a>
+      
+      
+      
+        <div class="flex-spacer"></div>
+      
+      
+      
 
-      </div>
     </div>
-  
+  </div>
+
+
+  <div id="search-cover" searchResult onclick="closeSearch()"></div>
 
 
 
@@ -157,8 +147,6 @@
 
   
   <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close
-  
-    drawer-fix
   " id="drawer" style="z-index: 2001;">
   <div class="userview" style="background-image: url(/img/bg.png)">
   <div class="overlay">
@@ -209,7 +197,7 @@
       <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
         
         
-        <div class="mdui-collapse-item mdui-collapse-item-open">
+        <div class="mdui-collapse-item ">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
             <div class="mdui-list-item-content">年份</div>
@@ -271,28 +259,57 @@
 
 
 
+
+<main>
+  
   
 
-  <style id="side_content_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("side_content_css","/css/src/now/side_content.min.css?6QUsjVbcFbaNw1GxvnmHrA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
-<div id="side-content" class="mdui-color-blue-grey animate-drawer">
-  <div class="mdui-grid-tile" style="overflow: visible;">
-    <div class="bg">
-      <img src="/img/random/picHD_13.png" />
-    </div>
-    <div class="mdui-grid-tile-actions mdui-grid-tile-actions-top mdui-grid-tile-actions-gradient">
-      <div class="flex-spacer"></div>
-      <div class="mdui-grid-tile-buttons">
-        
-  <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-float-right" mdui-menu="{target: '#menu-page-share'}"><i class="mdui-icon material-icons">&#xe80d;</i></button>
+  <style id="post_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("post_css","/css/src/now/post.min.css?EKoTbS50/qRdsnGpvz/clA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
-  <ul class="mdui-menu" id="menu-page-share">
+<style id="lightgallery_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("lightgallery_css","/css/src/lightgallery.min.css?k96yraexoRn3+CTmPycWNA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
+
+<style>
+  .lg-outer .lg-item {
+    background-image: url("/img/loading.gif");
+  }
+</style>
+<div class="post-warpper animate-post">
+  <div class="post-bg-color
     
+      
+        mdui-color-theme
+      
+    
+  "></div>
+  <div class="post-header
+    
+      
+        mdui-color-theme
+      
+    
+  ">
+    <div class="post-header-container">
+      <div class="post-title mdui-text-truncate">widgetassistant</div>
+      <div class="post-actions mdui-valign">
+        <div>
+          <span>编写时间：</span>
+          <span style="float: right">4月 06, 2020</span>
+          
+        </div>
+        
+
+        
+  <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#menu-post-share'}">
+    <i class="mdui-icon material-icons">&#xe80d;</i>
+  </button>
+
+  <ul class="mdui-menu" id="menu-post-share">
 
     
       <li class="mdui-menu-item">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://alcatraz323.github.com//archives/2019/index.html" target="_blank" class="mdui-ripple">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://alcatraz323.github.com//widgetassistant/index.html" target="_blank" class="mdui-ripple">
               分享到Facebook
           </a>
       </li>
@@ -300,7 +317,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="https://plus.google.com/share?url=https://alcatraz323.github.com//archives/2019/index.html" target="_blank" class="mdui-ripple">
+          <a href="https://plus.google.com/share?url=https://alcatraz323.github.com//widgetassistant/index.html" target="_blank" class="mdui-ripple">
               分享到Google+
           </a>
       </li>
@@ -308,7 +325,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alcatraz323.github.com//archives/2019/index.html&title=2019" target="_blank" class="mdui-ripple">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alcatraz323.github.com//widgetassistant/index.html&title=widgetassistant" target="_blank" class="mdui-ripple">
               分享到Linkedin
           </a>
       </li>
@@ -316,7 +333,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="http://connect.qq.com/widget/shareqq/index.html?site=2019&title=2019&summary=&pics=https://alcatraz323.github.com/img/favicon.png&url=https://alcatraz323.github.com//archives/2019/index.html" target="_blank" class="mdui-ripple">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=AirFortress&title=widgetassistant&summary=&pics=https://alcatraz323.github.com/img/favicon.png&url=https://alcatraz323.github.com/widgetassistant/index.html" target="_blank" class="mdui-ripple">
               分享到QQ
           </a>
       </li>
@@ -324,7 +341,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="https://telegram.me/url?url=https://alcatraz323.github.com//archives/2019/index.html&text=2019" target="_blank" class="mdui-ripple">
+          <a href="https://telegram.me/url?url=https://alcatraz323.github.com//widgetassistant/index.html&text=widgetassistant" target="_blank" class="mdui-ripple">
               分享到Telegram
           </a>
       </li>
@@ -332,7 +349,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="https://twitter.com/intent/tweet?text=2019&url=https://alcatraz323.github.com//archives/2019/index.html&via=Alcatraz" target="_blank" class="mdui-ripple">
+          <a href="https://twitter.com/intent/tweet?text=widgetassistant&url=https://alcatraz323.github.com//widgetassistant/index.html&via=Alcatraz" target="_blank" class="mdui-ripple">
               分享到Twitter
           </a>
       </li>
@@ -340,7 +357,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="http://service.weibo.com/share.php?appkey=&title=2019&url=https://alcatraz323.github.com//archives/2019/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
+          <a href="http://service.weibo.com/share.php?appkey=&title=widgetassistant&url=https://alcatraz323.github.com//widgetassistant/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
               分享到微博
           </a>
       </li>
@@ -352,77 +369,88 @@
       </div>
     </div>
   </div>
-  <div class="content">
-    <img class="mdui-img-circle avatar" src="/img/avatar.png"/>
-    <div class="author mdui-text-center">
-      Alcatraz
-    </div>
-    <div class="name">
-      2019
-    </div>
-    <div class="length">
+  <div class="post-container flex-spacer
+  
+    no-toc
+  
+  ">
+    <div class="post-adjust">
+      <div class="mdui-card card-bottom-fix menu-fix mdui-hoverable" id="blog-post">
+        <div class="warning">
+          这篇文章最后修改于
+          <span id="content-warning"></span>
+          天之前。
+          本页内容可能已经过时！
+        </div>
+        
+        
+          <div class="mdui-card-media">
+            <img src="/img/random/picHD_21.png"/>
+          </div>
+        
+        <div class="post-content mdui-typo no-margin" id="post-content">
+          <p><strong>材质包制作</strong><br><em>材质包结构</em><br>-pack_<em>.zip<br>–low-battery       –低电量材质<br>—-img             –图片<br>—-sound           –语音<br>—-config.json     –配置<br>–high-battery      –高电量材质<br>—-和低电量一样<br>–normal            –一般材质<br>—-同上<br>–custom_dialog.</em>(jpg,png,webp)     –自定义对话框背景<br>–icon.jpg          –图标<br>–props.json        –基本配置</p>
+<p><em>各json配置</em><br>1.*/config.json<br>示例：</p>
+<blockquote>
+<p>{<br>    “img_files”:[<br>        {<br>            “key”:”amiya_10”,<br>            “path”:”Ak_char_002_amiya_10.webp”<br>        },<br>        {<br>            “key”:”amiya_11”,<br>            “path”:”Ak_char_002_amiya_11.webp”<br>        }<br>    ],<br>    “sound_files”:[<br>        {<br>            “key”:”amiya_snd_006”,<br>            “path”:”AMiYa_CN_006.mp3”,<br>            “chat”:”我们失去了很多才走到今天。有时候我会问自己，这一切真的值得么……？”<br>        },<br>        {<br>            “key”:”amiya_snd_008”,<br>            “path”:”AMiYa_CN_008.mp3”,<br>            “chat”:”嘿嘿，博士，悄悄告诉你一件事——我重新开始练小提琴了。”<br>        },<br>        {<br>            “key”:”amiya_snd_022”,<br>            “path”:”AMiYa_CN_022.mp3”,<br>            “chat”:”博士，我在这里。”<br>        },<br>        {<br>            “key”:”amiya_snd_036”,<br>            “path”:”AMiYa_CN_036.mp3”,<br>            “chat”:”欸嘿嘿……”<br>        }<br>    ],<br>    “specified_matches”:[<br>        {<br>            “img”:”amiya_10”,<br>            “snd”:”amiya_snd_036”<br>        }<br>    ]<br>}</p>
+</blockquote>
+<p>2.pack_*.zip/props.json<br>示例：</p>
+<blockquote>
+<p>   {<br>        “id”: “pack_amiya_alc”,<br>        “name”: “Amiya”,<br>        “artist”: “鹰角网络(唯@W/黑泽朋世)”,<br>        “packer”: “Alcatraz”,<br>        “icon”: “icon.jpg”,<br>        “active_functions”: {<br>            “normal”: true,<br>            “low_battery”: true,<br>            “high_battery”: true<br>        },<br>        “custom_dialog”:{<br>            “enabled”:false,<br>            “img”:”custom_dialog.jpg”<br>        }</p>
+</blockquote>
+<pre><code>}
+</code></pre><p>3.示例材质包(素材来自萌娘百科，该材质包仅供学习和交流使用)<br><a href="https://alcatraz323.github.io/widgetassistant/pack_amiya_alc.zip" target="_blank" rel="noopener">[下载]</a></p>
+
+        </div>
+
+        
+          <div class="license mdui-typo">
+            <span>
+              本文许可协议：
+              
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
+              
+            </span>
+            <br />
+            <span>本文永久链接：<a href="https://alcatraz323.github.com/widgetassistant/index.html">https://alcatraz323.github.com/widgetassistant/index.html</a></span>
+            
+              <br />
+              <span>本文Markdown：<a href="https://alcatraz323.github.com/widgetassistant/index.htmlundefined.md">https://alcatraz323.github.com/widgetassistant/index.htmlundefined.md</a></span>
+            
+          </div>
+        
+
+        
+          <div class="posts-info">
+            
+              <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-color-red mdui-ripple mdui-center mdui-btn-dense" mdui-tooltip="{content: '打赏我一个吧', position: 'right'}" mdui-dialog="{target: '#donateDialog'}"><i class="mdui-icon fa fa-beer mdui-text-center"></i></button>
+            
+            <div class="flex-spacer"></div>
+            
+            
+          </div>
+        
+        
+          
+        
+      </div>
       
-      1篇文章
     </div>
   </div>
-</div>
-<div id="contentLocation"></div>
-
-
-
-<main>
+  <div class="post-pagination mdui-color-theme">
   
-  <div class="posts-container column-3">
-
-  </div>
-  <div id="content-list" class="animate-post">
-    
-      <div class="content-item">
-        
+    <div class="flex-spacer mdui-hidden-xs"></div>
   
-<div class="mdui-card card-bottom-fix mdui-hoverable">
-  <div class="mdui-card-header posts-header">
-    <img class="mdui-card-header-avatar" src="/img/avatar.png"/>
-    <div class="content mdui-valign">
-      <div class="mdui-typo-body-1-opacity mdui-typo">
-        <span>Alcatraz</span>
-        <span> · </span>
-        <span>8月 05, 2019</span>
-      </div>
-    </div>
-  <div class="flex-spacer"></div>
-    <a href="/2019/08/05/Too-complicated/" target="_self" class="mdui-btn mdui-btn-icon mdui-ripple btn-dense"><i class="mdui-icon material-icons">&#xe89e;</i></a>
-  </div>
-  <div class="mdui-card-content posts-content">
-    <div class="posts-excerpt">
-      <a href="/2019/08/05/Too-complicated/" target="_self" class="posts-title mdui-typo-title no-text-decoration">
-        
-        Too complicated
-      </a>
-      <div class="posts-strip mdui-typo-body-1">
-        Nothing to say
 
-      </div>
-    </div>
-    <div class="flex-spacer"></div>
-    
-      <div class="posts-thumbnail" style="background-image: url(/img/random/picHD_41.png)"></div>
-    
-  </div>
   
+      <div class="flex-spacer mdui-hidden-xs"></div>
+    
 </div>
 
-
-
-      </div>
-    
-  </div>
   
 
+</div>
 
-<button id="toTop" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-fab-hide" style="z-index: 9;" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
 
 
 </main>
@@ -497,80 +525,140 @@
 </script>
 
 
-
-
-  <script>
-    window.addEventListener("scroll", function(){
-       document.querySelector('#archives .bg .mdui-img-fluid.mdui-img-rounded')
-        .style.transform = 'translateY(' + document.body.scrollTop * 0.4 + 'px)';
-    })
-  </script>
-
-
-
-
-
-
-
-  <script type="text/ls-javascript" id="style-changing-script">
-  var content_flag = false;
-  var appbar = document.querySelector('div#blog-appbar')
-  var body = document.querySelector('body')
-
-  window.addEventListener('scroll', function() {
-    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    var divTop = document.querySelector('div#contentLocation').offsetTop
-    var contentLocation = divTop - scrollTop - 56;
-
-    if (!content_flag && contentLocation < 0 && window.innerWidth < 860) {
-      appbar.classList.add('style-fix');
-      body.classList.remove('style-fix');
-      content_flag = true;
-    } else if (content_flag && contentLocation >= 0 && window.innerWidth < 860) {
-      appbar.classList.remove('style-fix');
-      body.classList.add('style-fix');
-      content_flag = false;
-    };
-  })
-
-  function styleChanging() {
-    var hide = new mdui.Headroom('div#blog-appbar');
-    var windowWidth = window.innerWidth,
-      toLeftWidth = 860;
-    if (windowWidth < toLeftWidth) {
-      hide.enable();
-    } else {
-      hide.disable();
-    }
-  };
-  styleChanging();
-</script>
-
-
-
-
-
-
-  <script type="text/ls-javascript" id="to-top-script">
-  /* fab */
+  <script type="text/ls-javascript" id="appbar-script">
+  /* post appbar */
   (function() {
     var pageFlag = false;
-    var fab = new mdui.Fab('#toTop');
-    fab.hide();
+    var appbar = new mdui.Headroom('#blog-appbar');
+    appbar.disable();
+    var toolbar = document.querySelector('#blog-appbar .mdui-toolbar')
+
     window.addEventListener('scroll', function() {
       var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
       var divTop = document.querySelector('div#top').offsetTop
+
       var pageLocation = divTop - bodyTop;
       if (!pageFlag && pageLocation < 0) {
-        fab.show();
+        toolbar.classList.add('mdui-shadow-2')
+        appbar.enable();
         pageFlag = true;
       } else if (pageFlag && pageLocation >= 0) {
-        fab.hide();
+        toolbar.classList.remove('mdui-shadow-2')
+        appbar.disable();
         pageFlag = false;
       }
-    });
+    })
   })();
 </script>
+
+  <script type="text/ls-javascript" id="toc-active-script">
+  if (document.querySelector('ul#menu-toc > ol') !== null && document.querySelector('div#card-toc > ul') !== null) {
+    window.addEventListener("load", function() {
+      var timer;
+      function doWork() {
+        listens.forEach(function(value, index) {
+          value[1]();
+          value[0].classList.remove("mdui-list-item-active");
+        })
+        let actionToc = (listens[listens.reduce(function(r, v, index) {
+          if (v[2] == true) {
+            return index;
+          } else return r;
+        }, undefined)] || [])[0] || listens[0][0];
+        actionToc.classList.add("mdui-list-item-active");
+        if(actionToc.getClientRects().length == 0)return;
+        showToc(actionToc);
+      }
+
+      function showToc(toc) {
+        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
+        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
+        let offset = 0;
+        if (offsetTop < 0) offset = offsetTop;
+        if (offsetBottom > 0) offset = offsetBottom;
+        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
+        clearInterval(timer);
+        timer = setInterval(function() {
+          var now = cardToc.scrollTop;
+          var speed = (targetTop - now) / 10;
+          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+          if (Math.abs(now - targetTop) < 1) {
+            clearInterval(timer);
+          }
+          cardToc.scrollTop = now + speed;
+        }, 30);
+      }
+      var listens = [];
+      var cardToc = document.querySelector('#card-toc');
+      var links = document.querySelectorAll("a.post-toc-link");
+      var toclist = document.querySelector("#card-toc > ul");
+      Array.prototype.forEach.call(links, function(value, index) {
+        var id = (value.getAttribute("href") || "#").slice(1);
+        var element = document.getElementById(id);
+        listens.push([value, function() {
+          var readed = false;
+          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
+            readed = true;
+          } else {
+            readed = false;
+          }
+          listens[index][2] = readed;
+        }, false])
+      })
+      doWork();
+      window.addEventListener("scroll", doWork)
+    });
+  }
+</script>
+
+  <script type="text/ls-javascript" id="post-lg-script">
+  var images = document.querySelectorAll('#post-content img')
+  for (i = 0; i < images.length; i++) {
+    images[i].addEventListener("click", openLG);
+  }
+  function openLG() {
+    var img_src = this.getAttribute('src');
+    var img_alt = this.getAttribute('alt');
+    lightGallery(this, {
+      dynamic: true,
+      counter: false,
+      dynamicEl: [{
+        "src": img_src,
+        'subHtml': "<span author>Alcatraz</span> • 公开<div descr>" + img_alt + "</div>"
+      }],
+    });
+  }
+</script>
+
+  <!-- content warning -->
+<script type="text/ls-javascript" id="content-warning-script">
+  (function() {
+    var postLastModifiedDate = 1586132684775
+    var today = (new Date()).getTime()
+    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
+    if (difference >= 100) {
+      document.querySelector('div.warning').style.display = 'block'
+      document.querySelector('#content-warning').textContent = difference
+    }
+  })();
+</script>
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -579,6 +667,8 @@
   
 
 
+
+  <script>lsloader.load("lightgallery_js","/js/lightgallery.min.js?tQptxVaCRzQ3zx70gMUYig==", true)</script>
 
 
 
