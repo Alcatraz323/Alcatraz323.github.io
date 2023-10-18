@@ -18,7 +18,7 @@
         https://github.com/Halyul/hexo-theme-mdui
         Version: 1.5.2 -->
   <meta charset="UTF-8">
-  <title>Too complicated - AirFortress</title>
+  <title>2023 - AirFortress</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -55,7 +55,7 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="https://alcatraz323.github.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Too complicated - AirFortress | AirFortress">
+  <meta property="og:title" content="2023 - AirFortress | AirFortress">
   <meta property="og:image" content="/img/favicon.png" />
   
 
@@ -104,7 +104,9 @@
   
     mdui-appbar-with-toolbar
   
-  " >
+  
+    side-content style-fix
+  " onresize="styleChanging()">
 
 
   
@@ -115,30 +117,38 @@
 
   
 
-  <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed animate-appbar" id="blog-appbar">
-    <div class="mdui-toolbar mdui-color-theme">
-      <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
-        <i class="mdui-icon">
-          <span></span>
-        </i>
-      </button>
-      
-        <a href="/" class="mdui-typo-headline">
-          AirFotress
-        </a>
-      
-      
-      
-        <div class="flex-spacer"></div>
-      
-      
-      
+    <div class="mdui-appbar animate-appbar mdui-shadow-0 mdui-appbar-fixed" id="blog-appbar">
+      <div class="mdui-toolbar mdui-color-theme mdui-shadow-2">
+        <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
+          <i class="mdui-icon">
+            <span></span>
+          </i>
+        </button>
+        
+          <a href="/" class="mdui-typo-headline">
+            AirFotress
+          </a>
+          <span class="appbar-border-line mdui-hidden-xs"></span>
+        
+        
+          <span class="mdui-typo-title mdui-hidden-xs"
+            
+              onclick="smoothScroll.animateScroll( 0 );"
+            
+          >
+            2023
+          </span>
+        
+        
+        
+          <div class="flex-spacer"></div>
+        
+        
+        
 
+      </div>
     </div>
-  </div>
-
-
-  <div id="search-cover" searchResult onclick="closeSearch()"></div>
+  
 
 
 
@@ -147,6 +157,8 @@
 
   
   <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close
+  
+    drawer-fix
   " id="drawer" style="z-index: 2001;">
   <div class="userview" style="background-image: url(/img/bg.png)">
   <div class="overlay">
@@ -197,7 +209,7 @@
       <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
         
         
-        <div class="mdui-collapse-item ">
+        <div class="mdui-collapse-item mdui-collapse-item-open">
           <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
             <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
             <div class="mdui-list-item-content">年份</div>
@@ -267,56 +279,28 @@
 
 
 
-
-<main>
   
 
+  <style id="side_content_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("side_content_css","/css/src/now/side_content.min.css?6QUsjVbcFbaNw1GxvnmHrA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
-  <style id="post_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("post_css","/css/src/now/post.min.css?EKoTbS50/qRdsnGpvz/clA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-
-<style id="lightgallery_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("lightgallery_css","/css/src/lightgallery.min.css?k96yraexoRn3+CTmPycWNA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-
-
-<style>
-  .lg-outer .lg-item {
-    background-image: url("/img/loading.gif");
-  }
-</style>
-<div class="post-warpper animate-post">
-  <div class="post-bg-color
-    
-      
-        mdui-color-theme
-      
-    
-  "></div>
-  <div class="post-header
-    
-      
-        mdui-color-theme
-      
-    
-  ">
-    <div class="post-header-container">
-      <div class="post-title mdui-text-truncate">Too complicated</div>
-      <div class="post-actions mdui-valign">
-        <div>
-          <span>编写时间：</span>
-          <span style="float: right">8月 05, 2019</span>
-          
-        </div>
+<div id="side-content" class="mdui-color-indigo animate-drawer">
+  <div class="mdui-grid-tile" style="overflow: visible;">
+    <div class="bg">
+      <img src="/img/random/picHD_40.png" />
+    </div>
+    <div class="mdui-grid-tile-actions mdui-grid-tile-actions-top mdui-grid-tile-actions-gradient">
+      <div class="flex-spacer"></div>
+      <div class="mdui-grid-tile-buttons">
         
+  <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-float-right" mdui-menu="{target: '#menu-page-share'}"><i class="mdui-icon material-icons">&#xe80d;</i></button>
 
-        
-  <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#menu-post-share'}">
-    <i class="mdui-icon material-icons">&#xe80d;</i>
-  </button>
+  <ul class="mdui-menu" id="menu-page-share">
 
-  <ul class="mdui-menu" id="menu-post-share">
+    
 
     
       <li class="mdui-menu-item">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://alcatraz323.github.com//2019/08/05/Too-complicated/index.html" target="_blank" class="mdui-ripple">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://alcatraz323.github.com//archives/2023/10/index.html" target="_blank" class="mdui-ripple">
               分享到Facebook
           </a>
       </li>
@@ -324,7 +308,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="https://plus.google.com/share?url=https://alcatraz323.github.com//2019/08/05/Too-complicated/index.html" target="_blank" class="mdui-ripple">
+          <a href="https://plus.google.com/share?url=https://alcatraz323.github.com//archives/2023/10/index.html" target="_blank" class="mdui-ripple">
               分享到Google+
           </a>
       </li>
@@ -332,7 +316,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alcatraz323.github.com//2019/08/05/Too-complicated/index.html&title=Too complicated" target="_blank" class="mdui-ripple">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://alcatraz323.github.com//archives/2023/10/index.html&title=2023" target="_blank" class="mdui-ripple">
               分享到Linkedin
           </a>
       </li>
@@ -340,7 +324,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="http://connect.qq.com/widget/shareqq/index.html?site=AirFortress&title=Too complicated&summary=&pics=https://alcatraz323.github.com/img/favicon.png&url=https://alcatraz323.github.com/2019/08/05/Too-complicated/index.html" target="_blank" class="mdui-ripple">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=2023&title=2023&summary=&pics=https://alcatraz323.github.com/img/favicon.png&url=https://alcatraz323.github.com//archives/2023/10/index.html" target="_blank" class="mdui-ripple">
               分享到QQ
           </a>
       </li>
@@ -348,7 +332,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="https://telegram.me/url?url=https://alcatraz323.github.com//2019/08/05/Too-complicated/index.html&text=Too complicated" target="_blank" class="mdui-ripple">
+          <a href="https://telegram.me/url?url=https://alcatraz323.github.com//archives/2023/10/index.html&text=2023" target="_blank" class="mdui-ripple">
               分享到Telegram
           </a>
       </li>
@@ -356,7 +340,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="https://twitter.com/intent/tweet?text=Too complicated&url=https://alcatraz323.github.com//2019/08/05/Too-complicated/index.html&via=Alcatraz" target="_blank" class="mdui-ripple">
+          <a href="https://twitter.com/intent/tweet?text=2023&url=https://alcatraz323.github.com//archives/2023/10/index.html&via=Alcatraz" target="_blank" class="mdui-ripple">
               分享到Twitter
           </a>
       </li>
@@ -364,7 +348,7 @@
 
     
       <li class="mdui-menu-item">
-          <a href="http://service.weibo.com/share.php?appkey=&title=Too complicated&url=https://alcatraz323.github.com//2019/08/05/Too-complicated/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
+          <a href="http://service.weibo.com/share.php?appkey=&title=2023&url=https://alcatraz323.github.com//archives/2023/10/index.html&pic=&searchPic=false&style=simple" target="_blank" class="mdui-ripple">
               分享到微博
           </a>
       </li>
@@ -376,97 +360,117 @@
       </div>
     </div>
   </div>
-  <div class="post-container flex-spacer
-  
-    no-toc
-  
-  ">
-    <div class="post-adjust">
-      <div class="mdui-card card-bottom-fix menu-fix mdui-hoverable" id="blog-post">
-        <div class="warning">
-          这篇文章最后修改于
-          <span id="content-warning"></span>
-          天之前。
-          本页内容可能已经过时！
-        </div>
-        
-        
-          <div class="mdui-card-media">
-            <img src="/img/random/picHD_10.png"/>
-          </div>
-        
-        <div class="post-content mdui-typo no-margin" id="post-content">
-          <p>Nothing to say</p>
-
-        </div>
-
-        
-          <div class="license mdui-typo">
-            <span>
-              本文许可协议：
-              
-                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>
-              
-            </span>
-            <br />
-            <span>本文永久链接：<a href="https://alcatraz323.github.com/2019/08/05/Too-complicated/">https://alcatraz323.github.com/2019/08/05/Too-complicated/</a></span>
-            
-              <br />
-              <span>本文Markdown：<a href="https://alcatraz323.github.com/2019/08/05/Too-complicated/Too-complicated.md">https://alcatraz323.github.com/2019/08/05/Too-complicated/Too-complicated.md</a></span>
-            
-          </div>
-        
-
-        
-          <div class="posts-info">
-            
-              <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-color-red mdui-ripple mdui-center mdui-btn-dense" mdui-tooltip="{content: '打赏我一个吧', position: 'right'}" mdui-dialog="{target: '#donateDialog'}"><i class="mdui-icon fa fa-beer mdui-text-center"></i></button>
-            
-            <div class="flex-spacer"></div>
-            
-            
-          </div>
-        
-        
-          
-        
-      </div>
+  <div class="content">
+    <img class="mdui-img-circle avatar" src="/img/avatar.png"/>
+    <div class="author mdui-text-center">
+      Alcatraz
+    </div>
+    <div class="name">
+      2023
+    </div>
+    <div class="length">
       
+      2篇文章
     </div>
   </div>
-  <div class="post-pagination mdui-color-theme">
-  
-    <div class="prev mdui-ripple mdui-color-theme mdui-valign">
-      <a href="/2022/11/17/Archived-Information-for-PixelExperience-12-for-Razer-Phone-2-aura/" class="content no-text-decoration mdui-text-left">
-        <div>
-          <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
-          <span class="mdui-typo-body-2-opacity mdui-text-center">新的文章</span>
-        </div>
-        <div class="mdui-typo-title mdui-text-truncate">
-          Archived Information for PixelExperience 12 for Razer Phone 2(aura)
-        </div>
-      </a>
-    </div>
-  
+</div>
+<div id="contentLocation"></div>
 
+
+
+<main>
   
-    <div class="next mdui-ripple mdui-color-theme mdui-valign">
-      <a href="/2018/08/07/hello-world/" class="content no-text-decoration mdui-text-right">
-        <div>
-          <span class="mdui-typo-body-2-opacity mdui-text-center">旧的文章</span>
-          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
-        </div>
-        <div class="mdui-typo-title mdui-text-truncate">
-          Hello World
-        </div>
-      </a>
-    </div>
+  <div class="posts-container column-3">
+
+  </div>
+  <div id="content-list" class="animate-post">
     
+      <div class="content-item">
+        
+  
+<div class="mdui-card card-bottom-fix mdui-hoverable">
+  <div class="mdui-card-header posts-header">
+    <img class="mdui-card-header-avatar" src="/img/avatar.png"/>
+    <div class="content mdui-valign">
+      <div class="mdui-typo-body-1-opacity mdui-typo">
+        <span>Alcatraz</span>
+        <span> · </span>
+        <span>10月 18, 2023</span>
+      </div>
+    </div>
+  <div class="flex-spacer"></div>
+    <a href="/2023/10/18/Archived-Information-for-PixelExperience-13-for-Razer-Phone-2-aura/" target="_self" class="mdui-btn mdui-btn-icon mdui-ripple btn-dense"><i class="mdui-icon material-icons">&#xe89e;</i></a>
+  </div>
+  <div class="mdui-card-content posts-content">
+    <div class="posts-excerpt">
+      <a href="/2023/10/18/Archived-Information-for-PixelExperience-13-for-Razer-Phone-2-aura/" target="_self" class="posts-title mdui-typo-title no-text-decoration">
+        
+        Archived Information for PixelExperience 13 for Razer Phone 2(aura)
+      </a>
+      <div class="posts-strip mdui-typo-body-1">
+        Hello, this is Alcatraz
+As you can see this post, our PixelExperien...
+      </div>
+    </div>
+    <div class="flex-spacer"></div>
+    
+      <div class="posts-thumbnail" style="background-image: url(/img/random/picHD_30.png)"></div>
+    
+  </div>
+  
 </div>
 
+
+
+      </div>
+    
+      <div class="content-item">
+        
+  
+<div class="mdui-card card-bottom-fix mdui-hoverable">
+  <div class="mdui-card-header posts-header">
+    <img class="mdui-card-header-avatar" src="/img/avatar.png"/>
+    <div class="content mdui-valign">
+      <div class="mdui-typo-body-1-opacity mdui-typo">
+        <span>Alcatraz</span>
+        <span> · </span>
+        <span>10月 18, 2023</span>
+      </div>
+    </div>
+  <div class="flex-spacer"></div>
+    <a href="/2023/10/18/Archived-Information-for-PixelExperience-13-for-Xiaomi-Mi-Pad-4-4-Plus-clover/" target="_self" class="mdui-btn mdui-btn-icon mdui-ripple btn-dense"><i class="mdui-icon material-icons">&#xe89e;</i></a>
+  </div>
+  <div class="mdui-card-content posts-content">
+    <div class="posts-excerpt">
+      <a href="/2023/10/18/Archived-Information-for-PixelExperience-13-for-Xiaomi-Mi-Pad-4-4-Plus-clover/" target="_self" class="posts-title mdui-typo-title no-text-decoration">
+        
+        Archived Information for PixelExperience 13 for Xiaomi Mi Pad 4 / 4 Plus(clover)
+      </a>
+      <div class="posts-strip mdui-typo-body-1">
+        Hello, this is Alcatraz
+As you can see this post, our PixelExperien...
+      </div>
+    </div>
+    <div class="flex-spacer"></div>
+    
+      <div class="posts-thumbnail" style="background-image: url(/img/random/picHD_19.png)"></div>
+    
+  </div>
+  
+</div>
+
+
+
+      </div>
+    
+  </div>
   
 
-</div>
+
+<button id="toTop" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-fab-hide" style="z-index: 9;" onclick="smoothScroll.animateScroll( 0 );">
+  <i class="mdui-icon material-icons">&#xe5d8;</i>
+</button>
+
 
 </main>
 
@@ -540,141 +544,81 @@
 </script>
 
 
-  <script type="text/ls-javascript" id="appbar-script">
-  /* post appbar */
+
+
+  <script>
+    window.addEventListener("scroll", function(){
+       document.querySelector('#archives .bg .mdui-img-fluid.mdui-img-rounded')
+        .style.transform = 'translateY(' + document.body.scrollTop * 0.4 + 'px)';
+    })
+  </script>
+
+
+
+
+
+
+
+  <script type="text/ls-javascript" id="style-changing-script">
+  var content_flag = false;
+  var appbar = document.querySelector('div#blog-appbar')
+  var body = document.querySelector('body')
+
+  window.addEventListener('scroll', function() {
+    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+    var divTop = document.querySelector('div#contentLocation').offsetTop
+    var contentLocation = divTop - scrollTop - 56;
+
+    if (!content_flag && contentLocation < 0 && window.innerWidth < 860) {
+      appbar.classList.add('style-fix');
+      body.classList.remove('style-fix');
+      content_flag = true;
+    } else if (content_flag && contentLocation >= 0 && window.innerWidth < 860) {
+      appbar.classList.remove('style-fix');
+      body.classList.add('style-fix');
+      content_flag = false;
+    };
+  })
+
+  function styleChanging() {
+    var hide = new mdui.Headroom('div#blog-appbar');
+    var windowWidth = window.innerWidth,
+      toLeftWidth = 860;
+    if (windowWidth < toLeftWidth) {
+      hide.enable();
+    } else {
+      hide.disable();
+    }
+  };
+  styleChanging();
+</script>
+
+
+
+
+
+
+  <script type="text/ls-javascript" id="to-top-script">
+  /* fab */
   (function() {
     var pageFlag = false;
-    var appbar = new mdui.Headroom('#blog-appbar');
-    appbar.disable();
-    var toolbar = document.querySelector('#blog-appbar .mdui-toolbar')
-
+    var fab = new mdui.Fab('#toTop');
+    fab.hide();
     window.addEventListener('scroll', function() {
       var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
       var divTop = document.querySelector('div#top').offsetTop
-
       var pageLocation = divTop - bodyTop;
       if (!pageFlag && pageLocation < 0) {
-        toolbar.classList.add('mdui-shadow-2')
-        appbar.enable();
+        fab.show();
         pageFlag = true;
       } else if (pageFlag && pageLocation >= 0) {
-        toolbar.classList.remove('mdui-shadow-2')
-        appbar.disable();
+        fab.hide();
         pageFlag = false;
       }
-    })
+    });
   })();
 </script>
 
-  <script type="text/ls-javascript" id="toc-active-script">
-  if (document.querySelector('ul#menu-toc > ol') !== null && document.querySelector('div#card-toc > ul') !== null) {
-    window.addEventListener("load", function() {
-      var timer;
-      function doWork() {
-        listens.forEach(function(value, index) {
-          value[1]();
-          value[0].classList.remove("mdui-list-item-active");
-        })
-        let actionToc = (listens[listens.reduce(function(r, v, index) {
-          if (v[2] == true) {
-            return index;
-          } else return r;
-        }, undefined)] || [])[0] || listens[0][0];
-        actionToc.classList.add("mdui-list-item-active");
-        if(actionToc.getClientRects().length == 0)return;
-        showToc(actionToc);
-      }
-
-      function showToc(toc) {
-        let offsetTop = toc.getClientRects()[0].top - cardToc.getClientRects()[0].top - 40;
-        let offsetBottom = toc.getClientRects()[0].bottom - cardToc.getClientRects()[0].bottom + 40;
-        let offset = 0;
-        if (offsetTop < 0) offset = offsetTop;
-        if (offsetBottom > 0) offset = offsetBottom;
-        var targetTop = Math.max(0, Math.min(cardToc.scrollTop + offset, toclist.offsetHeight - cardToc.offsetHeight));
-        clearInterval(timer);
-        timer = setInterval(function() {
-          var now = cardToc.scrollTop;
-          var speed = (targetTop - now) / 10;
-          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
-          if (Math.abs(now - targetTop) < 1) {
-            clearInterval(timer);
-          }
-          cardToc.scrollTop = now + speed;
-        }, 30);
-      }
-      var listens = [];
-      var cardToc = document.querySelector('#card-toc');
-      var links = document.querySelectorAll("a.post-toc-link");
-      var toclist = document.querySelector("#card-toc > ul");
-      Array.prototype.forEach.call(links, function(value, index) {
-        var id = (value.getAttribute("href") || "#").slice(1);
-        var element = document.getElementById(id);
-        listens.push([value, function() {
-          var readed = false;
-          var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-          if (element.offsetTop <= scrollTop + element.clientHeight + 64) {
-            readed = true;
-          } else {
-            readed = false;
-          }
-          listens[index][2] = readed;
-        }, false])
-      })
-      doWork();
-      window.addEventListener("scroll", doWork)
-    });
-  }
-</script>
-
-  <script type="text/ls-javascript" id="post-lg-script">
-  var images = document.querySelectorAll('#post-content img')
-  for (i = 0; i < images.length; i++) {
-    images[i].addEventListener("click", openLG);
-  }
-  function openLG() {
-    var img_src = this.getAttribute('src');
-    var img_alt = this.getAttribute('alt');
-    lightGallery(this, {
-      dynamic: true,
-      counter: false,
-      dynamicEl: [{
-        "src": img_src,
-        'subHtml': "<span author>Alcatraz</span> • 公开<div descr>" + img_alt + "</div>"
-      }],
-    });
-  }
-</script>
-
-  <!-- content warning -->
-<script type="text/ls-javascript" id="content-warning-script">
-  (function() {
-    var postLastModifiedDate = 1565000730516
-    var today = (new Date()).getTime()
-    var difference = Math.floor((today - postLastModifiedDate)/(24*60*60*1000))
-    if (difference >= 100) {
-      document.querySelector('div.warning').style.display = 'block'
-      document.querySelector('#content-warning').textContent = difference
-    }
-  })();
-</script>
-
-  
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -682,8 +626,6 @@
   
 
 
-
-  <script>lsloader.load("lightgallery_js","/js/lightgallery.min.js?tQptxVaCRzQ3zx70gMUYig==", true)</script>
 
 
 

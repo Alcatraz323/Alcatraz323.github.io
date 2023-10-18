@@ -10,7 +10,6 @@ As you can see this post, our PixelExperience (Plus) 12 project for Razer Phone 
 ***History Updates (non-plus):***
 
 *2021.12.12 (first release)*
-
 >Introduce Android 12
 fix flashlight and multi camera
 fix refreshrate control
