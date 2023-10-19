@@ -242,7 +242,7 @@ kernel: some lmk tuning
 Upstream:
 September security patch
 
-*2023.10.18*
+*2023.10.19*
 >Device:
 kernel: update to 4.19.296
 Upstream:
@@ -307,7 +307,7 @@ emergency fix: 0503(PE Plus): camera video recording
 *2023.9.26*
 >-N/A
 
-*2023.10.18*
+*2023.10.19*
 >-N/A
 
 ==============================================
